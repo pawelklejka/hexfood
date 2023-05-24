@@ -1,9 +1,10 @@
-import Main from './components/Main/Main'
+import Form from './components/Form/Form'
+
 
 export default function Home() {
   return (
     <>
-      <Main />
+      <Form />
     </>
   )
 }
