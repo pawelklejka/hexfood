@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import {DishType, FoodInput} from '../Form'
+import { DishType } from '../Form'
 import PizzaForm from '../SpecificDishForm/PizzaForm'
 import SandwichForm from '../SpecificDishForm/SandwichForm'
 import SoupForm from '../SpecificDishForm/SoupForm'

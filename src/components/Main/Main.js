@@ -1,23 +1,21 @@
 import React from 'react'
 import HeroSection from './HeroSection/HeroSection'
-import Button from '../commons/Button/Button'
-import Image from 'next/image'
 import pizzaImage from '../../../public/assets/image/pizza.png'
 import SideSection from '../Main/SideSection/SideSection'
-import {NavLink} from 'react-router-dom'
 import Link from 'next/link'
+import {onClickMoveBlob} from '../../../src/animation/main'
 
 function Main() {
   return (
     <div className='container'>
         <div className='flex main-container side-margin'>
             <HeroSection />
-            <Link href={'/form'} className="primary-button">
+            <Link href={'/form'} className="primary-button" onClick={onClickMoveBlob}>
               Order now
             </Link>
         </div>
         <div className='flex side-container'>
-            <SideSection src={pizzaImage} />
+            <SideSection src={pizzaImage}/>
         </div>
     </div>
 

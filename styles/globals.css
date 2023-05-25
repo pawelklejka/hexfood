@@ -187,6 +187,10 @@ a {
   text-align: center;
 }
 
+.layout-animation{
+  display: block;
+}
+
 @keyframes zoomInOutBlobs{
   0%, 100%{
     opacity: 0.5;

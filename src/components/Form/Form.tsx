@@ -1,4 +1,4 @@
-import React, { ChangeEvent, ChangeEventHandler, useEffect, useState } from 'react'
+import React, { ChangeEvent, useState } from 'react'
 import SideSection from '../Main/SideSection/SideSection';
 import pizzaImage from '../../../public/assets/image/pizza.png'
 import { useForm, SubmitHandler, FormProvider } from "react-hook-form";
