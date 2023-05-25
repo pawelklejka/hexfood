@@ -7,7 +7,7 @@ import SoupForm from '../SpecificDishForm/SoupForm'
 export class SpecificFormFactory {
     static createObject(dishType: DishType | string): ReactElement {
         if (dishType === DishType.PIZZA) {
-            return <PizzaForm />
+            return <PizzaForm dishType={dishType}/>
         } 
         if (dishType === DishType.SOUP) {
             return <SoupForm />
@@ -15,7 +15,6 @@ export class SpecificFormFactory {
         if (dishType === DishType.SANDWICH) {
             return <SandwichForm />
         }
-
         return <h1>something went wrong with rendering form</h1>
     }
 }

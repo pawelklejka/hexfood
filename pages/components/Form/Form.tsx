@@ -3,19 +3,18 @@ import SideSection from '../Main/SideSection/SideSection';
 import pizzaImage from '../../../public/assets/image/pizza.png'
 import { useForm, SubmitHandler, FormProvider } from "react-hook-form";
 import axios from '../../api/apiClient';
-import PizzaForm from './SpecificDishForm/PizzaForm';
-import SandwichForm from './SpecificDishForm/SandwichForm';
-import SoupForm from './SpecificDishForm/SoupForm';
 import { SpecificFormFactory } from './SpecificFormFactory/SpecificFormFactory';
 import Button from '../commons/Button/Button';
 
 export default function Form() {
     const [specificDishForm, setSpecificDishForm] = useState<DishType | string>(DishType.PIZZA)
-    const methods = useForm<FoodInput>();
-    const { register, errors, handleSubmit } = methods;
+    const methods = useForm<FoodInput>({shouldUnregister: true});
+    const { register, formState: {errors}, handleSubmit } = methods;
 
     const onSubmit: SubmitHandler<FoodInput> = data => {
-        axios.post<FoodInput>('', data)
+        console.log(data);
+        
+        axios.post<FoodInput>('', data )
         .then(res => console.log(res))
         .catch(error => console.log(error))
     };
@@ -35,16 +34,18 @@ export default function Form() {
             <form onSubmit={handleSubmit(onSubmit)} className="flex">
                 <label>Name</label>
                 <input {...register("name", {required: true})} />
+                {errors?.name?.type === "required" && <p className='invalid-message'>This field is required</p>}
                 <label>Preparation time</label>
                 <input {...register("preparation_time", {required: true, pattern: /^(?:1[0-2]|0[0-9]):[0-5][0-9]:[0-5][0-9]$/})} type="time" step="1"/>
+                {errors?.preparation_time?.type === "required" && <p className='invalid-message'>This field is required</p>}
                 <label>Dish type</label>
-                <select {...register("type", {required: true})} onChange={e => onChangeHandler(e)}>
+                <select id="dishType" {...register("type", {required: true})} onChange={e => onChangeHandler(e)}>
                     <option value={DishType.PIZZA}>pizza</option>
                     <option value={DishType.SOUP}>soup</option>
                     <option value={DishType.SANDWICH}>sandwich</option>
                 </select>
                 {dishForm}
-                <Button type="submit" className='primary-button' placeholder='Send Order' buttonText='Send Order'/>
+                <Button type="submit" buttonText='Send Order'/>
             </form>
             </FormProvider>
     

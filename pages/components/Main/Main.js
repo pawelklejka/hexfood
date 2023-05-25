@@ -12,8 +12,8 @@ function Main() {
     <div className='container'>
         <div className='flex main-container side-margin'>
             <HeroSection />
-            <Link href={'/form'}>
-                <Button buttonText='Order now'/>
+            <Link href={'/form'} className="primary-button">
+              Order now
             </Link>
         </div>
         <div className='flex side-container'>

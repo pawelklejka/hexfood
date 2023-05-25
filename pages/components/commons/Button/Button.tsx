@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { ButtonHTMLAttributes } from 'react'
 
 interface ButtonProps {
   buttonText: string
+  type: "button" | "submit" | "reset" | undefined
 }
 
 function Button(props: ButtonProps) {
   return (
-    <button className='primary-button'>{props.buttonText}</button>
+    <button className='primary-button' type={props.type}>{props.buttonText}</button>
   )
 }
 
