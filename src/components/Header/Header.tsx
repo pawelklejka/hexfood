@@ -9,7 +9,7 @@ export default function Header() {
     <header className='side-margin'>
         <Link href={'/'}>
           <Image
-          className={styles.logo}
+          className='logo'
           src={logo}
           alt="hexfood logo"
           />

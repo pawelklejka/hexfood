@@ -26,7 +26,7 @@ function Layout({children}: Props) {
           onExit={onPageExit} // our exit animation
           mountOnEnter={true}
           unmountOnExit={true}>
-            <div className={styles["layout-animation"]}>
+            <div className="layout-animation">
               {children}
             </div>
           </Transition>
