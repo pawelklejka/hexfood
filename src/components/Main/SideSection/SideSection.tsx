@@ -1,8 +1,8 @@
 import React from 'react'
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 
 interface Props{
-  src: string
+  src: string | StaticImageData
 }
 
 function SideSection(props: Props) {
