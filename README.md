@@ -1,3 +1,14 @@
+### Goals
+:heavy_check_mark: working conditional form\
+:heavy_check_mark: sending request to API\
+:heavy_check_mark: git repository\
+:heavy_check_mark: live preview\
+:heavy_check_mark: use of some modern form library\
+:heavy_check_mark: proper validation handling\
+:heavy_check_mark: typescript\
+:heavy_check_mark: goodlooking UI\
+:x: test with cypress
+
 
 ### Live view of application
 https://aesthetic-fox-4bf0a6.netlify.app
