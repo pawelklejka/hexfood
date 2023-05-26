@@ -24,3 +24,17 @@ export interface SandwichFormInput extends FormInput{
 }
 
 export type FoodInput = PizzaFormInput | SoupFormInput | SandwichFormInput
+
+export interface ErrorResponse{
+    name?: Array<String>,
+    preparation_time?: Array<String>,
+    type?: Array<String>
+    no_of_slices?: Array<String>,
+    diameter?: Array<String>
+    spiciness_scale?: Array<String>
+    slices_of_bread?: Array<String>
+}
+
+export interface SpecificDishFormProps{
+    apiError: ErrorResponse
+}

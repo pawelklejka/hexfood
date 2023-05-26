@@ -1,0 +1,11 @@
+.blob{
+    position: absolute;
+    background-color: var(--primary-complementary);
+    width: 75vw;
+    height: 75vw;
+    top: -35vw;
+    right: -25vw;
+    border-radius: 50%;
+    animation: zoomInOutBlobs 10s linear infinite;
+    z-index: -2;
+  }

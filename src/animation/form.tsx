@@ -1,5 +1,5 @@
 import gsap from 'gsap'
-import { DishType } from '../components/Form/types/types'
+import { DishType } from '../commons/types/types'
 
 export const animateColor = (dishType: DishType | string) => {
     if(DishType.PIZZA == dishType || dishType == "pizza"){

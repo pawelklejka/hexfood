@@ -1,9 +1,10 @@
 import Header from '../Header/Header'
-import Blob from '../commons/Blob/Blob'
+import Blob from '../../commons/components/Blob/Blob'
 import { ReactNode } from 'react'
 import { SwitchTransition, Transition } from 'react-transition-group'
 import { useRouter } from 'next/router'
 import {onPageEnter, onPageExit} from '../../../src/animation/layout'
+import styles from './Layout.module.css'
 
 interface Props {
   children?: ReactNode
@@ -25,7 +26,7 @@ function Layout({children}: Props) {
           onExit={onPageExit} // our exit animation
           mountOnEnter={true}
           unmountOnExit={true}>
-            <div className="layout-animation">
+            <div className={styles["layout-animation"]}>
               {children}
             </div>
           </Transition>

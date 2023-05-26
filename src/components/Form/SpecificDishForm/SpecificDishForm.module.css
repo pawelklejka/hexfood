@@ -1,10 +1,10 @@
-.pizzaInputColor{
+.pizza-input-color{
     background-color: var(--primary-complementary);
 }
 
-.soupInputColor{
+.soup-input-color{
     background-color: var(--secondary-complementary);
 }
-.sandwichInputColor{
+.sandwich-input-color{
     background-color: var(--third-complementary);
 }
