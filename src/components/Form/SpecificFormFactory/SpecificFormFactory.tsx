@@ -1,5 +1,5 @@
 import { ReactElement } from 'react'
-import { DishType } from '../Form'
+import { DishType } from '../types/types'
 import PizzaForm from '../SpecificDishForm/PizzaForm'
 import SandwichForm from '../SpecificDishForm/SandwichForm'
 import SoupForm from '../SpecificDishForm/SoupForm'
@@ -7,7 +7,7 @@ import SoupForm from '../SpecificDishForm/SoupForm'
 export class SpecificFormFactory {
     static createObject(dishType: DishType | string): ReactElement {
         if (dishType === DishType.PIZZA) {
-            return <PizzaForm dishType={dishType}/>
+            return <PizzaForm />
         } 
         if (dishType === DishType.SOUP) {
             return <SoupForm />

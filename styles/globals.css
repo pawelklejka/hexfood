@@ -12,9 +12,10 @@
   --black: #1E1E1E;
   --grey: #6C6C6C;
   --primary-main: #FF9F1C;
-  --primary-complementary: #FFBF69;
   --secondary-main: #4A6D00;
+  --primary-complementary: #FFBF69;
   --secondary-complementary: #9CBD55;
+  --third-complementary: #55ACBD;
   --warning: #BF1650;
 }
 

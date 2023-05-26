@@ -1,9 +1,9 @@
 import React from 'react'
 import HeroSection from './HeroSection/HeroSection'
 import pizzaImage from '../../../public/assets/image/pizza.png'
-import SideSection from '../Main/SideSection/SideSection'
+import SideSection from './SideSection/SideSection'
 import Link from 'next/link'
-import {onClickMoveBlob} from '../../../src/animation/main'
+import {onClickMoveBlob} from '../../animation/main'
 
 function Main() {
   return (
