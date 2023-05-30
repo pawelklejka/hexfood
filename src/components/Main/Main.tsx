@@ -10,7 +10,7 @@ function Main() {
     <div className='container'>
         <div className='flex main-container side-margin'>
             <HeroSection />
-            <Link href={'/form'} className="primary-button" onClick={onClickMoveBlob}>
+            <Link href={'/form'} className="primary-button" onClick={onClickMoveBlob} data-cy="order-now-button">
               Order now
             </Link>
         </div>

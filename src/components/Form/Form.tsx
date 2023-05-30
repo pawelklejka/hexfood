@@ -54,7 +54,7 @@ export default function Form() {
         <div className='flex main-container side-margin'>
             <h1>Your order form</h1>
             <FormProvider {...methods}>
-            <form onSubmit={handleSubmit(onSubmit)} className="flex">
+            <form onSubmit={handleSubmit(onSubmit)} className="flex" data-cy="order-form">
                 <label>Name</label>
                 <input {...register("name", {required: true})} />
                 {errors?.name?.type === "required" && <p className='invalid-message'>This field is required</p>}
