@@ -7,7 +7,7 @@
 :heavy_check_mark: proper validation handling\
 :heavy_check_mark: typescript\
 :heavy_check_mark: goodlooking UI\
-:x: test with cypress
+:construction: test with cypress
 
 
 ### Live view of application
