@@ -7,7 +7,10 @@
 :heavy_check_mark: proper validation handling\
 :heavy_check_mark: typescript\
 :heavy_check_mark: goodlooking UI\
-:construction: test with cypress
+:heavy_check_mark: test with cypress
+
+### Cypress tests
+When we commit any change to the repo the pipeline on netlify starts cypress tests before the deploy. The tests right now are involving all valid form scenarios for each dish type.
 
 
 ### Live view of application
