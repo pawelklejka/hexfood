@@ -25,6 +25,7 @@
     "typescript": "5.0.4"
   },
   "devDependencies": {
-    "@types/react-transition-group": "^4.4.6"
+    "@types/react-transition-group": "^4.4.6",
+    "netlify-plugin-cypress": "^2.2.1"
   }
 }
